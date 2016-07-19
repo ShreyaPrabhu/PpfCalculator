@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PPF_Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_knowMore">Know More</string>
+    <string name="heading">PUBLIC PROVIDENT FUND</string>
+    <string name="Info">The Public Provident Fund is savings-cum-tax-saving instrument in India, introduced by the National Savings Institute of the Ministry of Finance in 1968.The aim of the scheme is to mobilize small savings by offering an investment with reasonable returns combined with income tax benefits.
+</string>
+    <string name="MoreInfo">You can invest from Rs. 500 to maximum Rs. 1,50,000 in one financial year. PPF account has 15 years locking period, however anyone can partially withdraw from seventh year and onwards.
+</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="year">Enter Starting Year </string>
+    <string name="yearExample">Ex - 2016 </string>
+    <string name="Amount">Enter Yearly Deposite Amount</string>
+    <string name="AmountExample">Amount > 500</string>
+    <string name="calcType">Calculation Mode - Fixed Yearly Amount</string>
+    <string name="month">(Starting Month - April)</string>
+    <string name="title_activity_know_more">KnowMore</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ppf_maturity">ppfMaturity</string>
+    <string name="StartYear">Start Year</string>
+    <string name="OpeningBalance">Opening Balance</string>
+    <string name="AmountDeposited">Amount Deposited</string>
+    <string name="InterestEarned">Interest Earned</string>
+    <string name="ClosingBalance">Closing Balance</string>
+</resources>
