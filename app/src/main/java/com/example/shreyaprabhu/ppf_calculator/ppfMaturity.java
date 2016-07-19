@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,10 @@ public class ppfMaturity extends AppCompatActivity {
     private TableRowModels tablerowModels;
     private TableRowAdapter tablerowAdapter;
     private RecyclerView recyclerView;
+    TextView maturity;
+    TextView amount;
+    TextView interest1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +35,9 @@ public class ppfMaturity extends AppCompatActivity {
         setContentView(R.layout.activity_ppf_maturity);
 
         recyclerView = (RecyclerView) findViewById(R.id.tableRow_recyclerview);
-
+        maturity = (TextView) findViewById(R.id.Maturity);
+        amount = (TextView) findViewById(R.id.Amount);
+        interest1 = (TextView) findViewById(R.id.TotalInterest);
 
 
         Bundle yeardata = getIntent().getExtras();
@@ -101,7 +108,12 @@ public class ppfMaturity extends AppCompatActivity {
             tableRows.add(tablerowModel);
 
             i++;
+            this.InterestEarned = interest;
         }
+
+        maturity.setText("Maturity Amount = " + String.valueOf(CBalance));
+        interest1.setText("Interest Earned = " +  String.valueOf(InterestEarned));
+        amount.setText("Amount Deposited = " + String.valueOf(AmountDeposited));
         tablerowAdapter.notifyDataSetChanged();
         Log.v(TAG, "Added" +tablerowAdapter.getItemCount());
     }

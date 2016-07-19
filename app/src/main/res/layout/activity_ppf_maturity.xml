@@ -81,5 +81,49 @@
 
     </ScrollView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/ErrorMessage"
+        android:text="Needs to be fixed"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/darker_gray" />
+
+
+
+    <TextView
+        android:id="@+id/Amount"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:id="@+id/TotalInterest"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/Maturity"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"/>
+
+
+
+
 
 </LinearLayout>
