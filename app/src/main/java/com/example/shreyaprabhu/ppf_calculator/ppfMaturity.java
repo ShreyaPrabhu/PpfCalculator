@@ -39,7 +39,6 @@ public class ppfMaturity extends AppCompatActivity {
         amount = (TextView) findViewById(R.id.Amount);
         interest1 = (TextView) findViewById(R.id.TotalInterest);
 
-
         Bundle yeardata = getIntent().getExtras();
         if(yeardata==null){
             return;
@@ -64,6 +63,8 @@ public class ppfMaturity extends AppCompatActivity {
 
         tableRows = new ArrayList<>();
         tablerowAdapter = new TableRowAdapter(this,tableRows);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+        recyclerView.setAdapter(tablerowAdapter);
 
         tablerowModels = new TableRowModels();
         tablerowModels.setAmountDeposited(AmountDeposited);
@@ -74,8 +75,7 @@ public class ppfMaturity extends AppCompatActivity {
         tableRows.add(tablerowModels);
         tablerowAdapter.notifyDataSetChanged();
 
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
-        recyclerView.setAdapter(tablerowAdapter);
+
 
         ppfCalc(StartYear, ClosingBalance);
     }
