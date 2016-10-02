@@ -12,21 +12,21 @@ import java.util.ArrayList;
 /**
  * Created by Shreya Prabhu on 6/22/2016.
  */
-public class TableRowAdapter extends RecyclerView.Adapter<TableRowAdapter.RowViewHolder> {
+
+class TableRowAdapter extends RecyclerView.Adapter<TableRowAdapter.RowViewHolder> {
 
 
 
     private ArrayList<TableRowModels> tableRowList = new ArrayList<>();
-    private static Context mContext;
 
-    public class RowViewHolder extends RecyclerView.ViewHolder {
+    class RowViewHolder extends RecyclerView.ViewHolder {
         private TextView StartYear;
         private TextView OpeningBalance;
         private TextView AmountDeposited;
         private TextView InterestEarned;
         private TextView ClosingBalance;
 
-        public RowViewHolder(View itemView) {
+        RowViewHolder(View itemView) {
             super(itemView);
             StartYear = (TextView) itemView.findViewById(R.id.StartYear);
             OpeningBalance = (TextView) itemView.findViewById(R.id.OpeningBalance);
@@ -37,9 +37,8 @@ public class TableRowAdapter extends RecyclerView.Adapter<TableRowAdapter.RowVie
         }
     }
 
-    public TableRowAdapter(Context context, ArrayList<TableRowModels> tableRowList) {
+    TableRowAdapter(Context context, ArrayList<TableRowModels> tableRowList) {
         super();
-        mContext = context;
         this.tableRowList = tableRowList;
     }
 

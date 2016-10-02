@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ppfMaturity extends AppCompatActivity {
+public class PPFMaturity extends AppCompatActivity {
 
-    private final String TAG = ppfMaturity.class.getSimpleName();
+    private final String TAG = PPFMaturity.class.getSimpleName();
 
     private int StartYear;
     private int OpeningBalance;
@@ -111,9 +111,9 @@ public class ppfMaturity extends AppCompatActivity {
             this.InterestEarned = interest;
         }
 
-        maturity.setText("Maturity Amount = " + String.valueOf(CBalance));
-        interest1.setText("Interest Earned = " +  String.valueOf(InterestEarned));
-        amount.setText("Amount Deposited = " + String.valueOf(AmountDeposited));
+        maturity.setText("Maturity Amount = ".concat(String.valueOf(CBalance)));
+        interest1.setText("Interest Earned = ".concat(String.valueOf(InterestEarned)));
+        amount.setText("Amount Deposited = ".concat(String.valueOf(AmountDeposited)));
         tablerowAdapter.notifyDataSetChanged();
         Log.v(TAG, "Added" +tablerowAdapter.getItemCount());
     }

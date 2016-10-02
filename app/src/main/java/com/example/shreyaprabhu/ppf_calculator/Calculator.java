@@ -22,7 +22,7 @@ public class Calculator extends AppCompatActivity {
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(Calculator.this,ppfMaturity.class);
+                Intent i = new Intent(Calculator.this,PPFMaturity.class);
                 final EditText yearInput = (EditText) findViewById(R.id.yearInput);
                 String year = yearInput.getText().toString();
                 i.putExtra("yearmessage", year);

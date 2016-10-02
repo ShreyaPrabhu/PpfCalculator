@@ -25,7 +25,7 @@
             android:label="@string/title_activity_know_more" >
         </activity>
         <activity
-            android:name=".ppfMaturity"
+            android:name=".PPFMaturity"
             android:label="@string/title_activity_ppf_maturity" >
         </activity>
     </application>

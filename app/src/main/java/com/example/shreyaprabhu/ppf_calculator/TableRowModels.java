@@ -5,20 +5,18 @@ import java.io.Serializable;
 /**
  * Created by Shreya Prabhu on 6/22/2016.
  */
-public class TableRowModels implements Serializable {
+
+class TableRowModels implements Serializable {
     private int StartYear;
     private int OpeningBalance;
     private int AmountDeposited;
     private int InterestEarned;
     private int ClosingBalance;
 
-    public TableRowModels()
-    {
-
+    TableRowModels(){
     }
 
-    public TableRowModels(int StartYear,int OpeningBalance, int AmountDeposited, int InterestEarned,int ClosingBalance)
-    {
+    TableRowModels(int StartYear,int OpeningBalance, int AmountDeposited, int InterestEarned,int ClosingBalance){
         this.StartYear = StartYear;
         this.OpeningBalance = OpeningBalance;
         this.AmountDeposited = AmountDeposited;
@@ -26,43 +24,43 @@ public class TableRowModels implements Serializable {
         this.ClosingBalance = ClosingBalance;
     }
 
-    public void setStartYear(int StartYear){
+    void setStartYear(int StartYear){
         this.StartYear = StartYear;
     }
 
-    public int getStartYear(){
+    int getStartYear(){
         return StartYear;
     }
 
-    public void setAmountDeposited(int AmountDeposited){
+    void setAmountDeposited(int AmountDeposited){
         this.AmountDeposited = AmountDeposited;
     }
 
-    public int getAmountDeposited(){
+    int getAmountDeposited(){
         return AmountDeposited;
     }
 
-    public void setOpeningBalance(int OpeningBalance){
+    void setOpeningBalance(int OpeningBalance){
         this.OpeningBalance = OpeningBalance;
     }
 
-    public int getOpeningBalance(){
+    int getOpeningBalance(){
         return OpeningBalance;
     }
 
-    public void setInterestEarned(int InterestEarned){
+    void setInterestEarned(int InterestEarned){
         this.InterestEarned = InterestEarned;
     }
 
-    public int getInterestEarned(){
+    int getInterestEarned(){
         return InterestEarned;
     }
 
-    public void setClosingBalance(int ClosingBalance){
+    void setClosingBalance(int ClosingBalance){
         this.ClosingBalance = ClosingBalance;
     }
 
-    public int getClosingBalance(){
+    int getClosingBalance(){
         return ClosingBalance;
     }
 
