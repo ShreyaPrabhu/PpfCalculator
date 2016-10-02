@@ -55,11 +55,11 @@ public class TableRowAdapter extends RecyclerView.Adapter<TableRowAdapter.RowVie
     public void onBindViewHolder(RowViewHolder holder, int position) {
 
         TableRowModels tableRowModels = tableRowList.get(position);
-        holder.StartYear.setText(tableRowModels.getStartYear());
-        holder.OpeningBalance.setText(tableRowModels.getOpeningBalance());
-        holder.AmountDeposited.setText(tableRowModels.getAmountDeposited());
-        holder.InterestEarned.setText(tableRowModels.getInterestEarned());
-        holder.ClosingBalance.setText(tableRowModels.getClosingBalance());
+        holder.StartYear.setText(String.valueOf(tableRowModels.getStartYear()));
+        holder.OpeningBalance.setText(String.valueOf(tableRowModels.getOpeningBalance()));
+        holder.AmountDeposited.setText(String.valueOf(tableRowModels.getAmountDeposited()));
+        holder.InterestEarned.setText(String.valueOf(tableRowModels.getInterestEarned()));
+        holder.ClosingBalance.setText(String.valueOf(tableRowModels.getClosingBalance()));
 
     }
 
